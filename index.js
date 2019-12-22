@@ -34,7 +34,7 @@ client.on('message', async msg => {
     message += `**Arms**: ${randomArmorSet.gloves.name} (rarity: ${randomArmorSet.gloves.rarity}) \n`;
     message += `**Waist**: ${randomArmorSet.waist.name} (rarity: ${randomArmorSet.waist.rarity}) \n`;
     message += `**Legs**: ${randomArmorSet.legs.name} (rarity: ${randomArmorSet.legs.rarity}) \n`;
-    message += `**Weapon** :${randomWeapon.name} (rarity: ${randomWeapon.rarity}) \n`;
+    message += `**Weapon**: ${randomWeapon.name} (rarity: ${randomWeapon.rarity}) \n`;
     message += `**Charm**: ${randomCharm.name} (rarity: ${_.sample(randomCharm.ranks).rarity}) \n`;
     message += `**Target**: ${randomMonster.name}`;
 
