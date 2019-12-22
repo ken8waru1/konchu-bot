@@ -25,7 +25,7 @@ client.on("message", async msg => {
           randomHunt[key] = randomFeatures[idx];
         });
       })
-      .catch(err => console.log(err));
+      .catch(error => console.log(error));
 
     const {
       randomArmorSet,

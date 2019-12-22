@@ -1,5 +1,6 @@
 const axios = require("axios");
 const _ = require("lodash");
+
 const { ARMOR_TYPES } = require("./constants");
 
 const fetchRandomArmorSet = armorType => {
