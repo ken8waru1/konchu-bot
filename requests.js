@@ -12,6 +12,8 @@ const fetchRandomArmorSet = armorType => {
     }
 
     return randomArmorSet;
+  }).catch(error => {
+    console.log(error);
   });
 }
 
@@ -19,21 +21,27 @@ const fetchRandomWeapon = () => {
   return axios.get('https://mhw-db.com/weapons').then(res => {
     const randomWeapon = _.sample(res.data);
     return randomWeapon
-  });
+  }).catch(error => {
+    console.log(error);
+  });;
 }
 
 const fetchRandomCharm = () => {
   return axios.get('https://mhw-db.com/charms').then(res => {
     const randomCharm = _.sample(res.data);
     return randomCharm;
-  });
+  }).catch(error => {
+    console.log(error);
+  });;
 }
 
 const fetchRandomMonster = () => {
   return axios.get('https://mhw-db.com/monsters?q={"type": "large"}').then(res => {
     const randomMonster = _.sample(res.data);
     return randomMonster;
-  });
+  }).catch(error => {
+    console.log(error);
+  });;
 }
 
 exports.fetchRandomArmorSet = fetchRandomArmorSet;
