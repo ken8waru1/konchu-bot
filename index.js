@@ -35,7 +35,8 @@ client.on("message", async msg => {
     } = randomHunt;
     let message = "";
 
-    //formatting with template literals causes weird things when the message hits discord, so doing it this way for now, but there has to be a better way so will revisit
+    //putting everything into a single template literal with line breaks messes up the formatting a bit once it hits discord,
+    //so doing it this way for now, but there has to be a better way so will revisit
     message += `**Head**: ${randomArmorSet.head.name} (rarity: ${randomArmorSet.head.rarity}) \n`;
     message += `**Chest**: ${randomArmorSet.chest.name} (rarity: ${randomArmorSet.chest.rarity}) \n`;
     message += `**Arms**: ${randomArmorSet.gloves.name} (rarity: ${randomArmorSet.gloves.rarity}) \n`;
